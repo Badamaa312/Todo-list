@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoApp</title>
+    <link rel="stylesheet" href="./toDo.css" />
+  </head>
+  <body>
+    <div class="dis_button">
+      <button id="add_task_button">Add task</button>
+    </div>
+    <div class="container">
+      <div class="cards">
+        <div class="smallContainer">
+          <div class="circle"></div>
+          <div class="title">To do</div>
+          <div class="totalTasks">5</div>
+        </div>
+        <div class="taskBox color_white" id="todo_tasks_container">
+          <div class="task">
+            <input
+              type="checkbox"
+              width="12px"
+              height="12px"
+              border-radius="50%"
+              id=""
+            />
+            <div class="taskName_t">[Loan-managemant] - Add card component</div>
+            <button class="pen">
+              <img src="./pen.png" width="16px" height="16px" />
+            </button>
+            <button class="trash">
+              <img src="./trash.png" width="16px" height="16px" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="smallContainer">
+          <div class="circle-gy"></div>
+          <div class="title">In Progress</div>
+          <div class="totalTasks">5</div>
+        </div>
+        <div class="taskBox color_white" id="inprogress_tasks_container">
+          <div class="task">
+            <input
+              type="checkbox"
+              width="12px"
+              height="12px"
+              border-radius="50%"
+              id=""
+            />
+            <div class="taskName_i">[Loan-managemant] - Add card component</div>
+            <button class="pen">
+              <img src="./pen.png" width="16px" height="16px" />
+            </button>
+            <button class="trash">
+              <img src="./trash.png" width="16px" height="16px" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="smallContainer">
+          <div class="circle-gr"></div>
+          <div class="title">Done</div>
+          <div class="totalTasks">5</div>
+        </div>
+        <div class="taskBox color_white" id="done_tasks_container">
+          <div class="task">
+            <input
+              type="checkbox"
+              width="12px"
+              height="12px"
+              border-radius="50%"
+              id=""
+            />
+            <div class="taskName_d">[Loan-managemant] - Add card component</div>
+            <button class="pen">
+              <img src="./pen.png" width="16px" height="16px" />
+            </button>
+            <button class="trash">
+              <img src="./trash.png" width="16px" height="16px" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="smallContainer">
+          <div class="circle-red"></div>
+          <div class="title">Blocked</div>
+          <div class="totalTasks">5</div>
+        </div>
+        <div class="taskBox color_white" id="blocked_tasks_container">
+          <div class="task">
+            <input
+              type="checkbox"
+              width="12px"
+              height="12px"
+              border-radius="50%"
+              id=""
+            />
+            <div class="taskName_b">[Loan-managemant] - Add card component</div>
+            <button class="pen">
+              <img src="./pen.png" width="16px" height="16px" />
+            </button>
+            <button class="trash">
+              <img src="./trash.png" width="16px" height="16px" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="dialog_container">
+        <!-- <div class="title1">Enter Task</div> -->
+        <div class="dialog">
+          <input id="input_element" type="text" />
+          <!-- <input placeholder="Description..." id="statusSelect" type="text" /> -->
+          <select name="" id="select_status">
+            <option value="todo">todo</option>
+            <option value="inProgress">inProgress</option>
+            <option value="done">done</option>
+            <option value="blocked">blocked</option>
+          </select>
+        </div>
+        <button id="submit_button">Submit</button>
+      </div>
+    </div>
+
+    <script src="./toDo.js"></script>
+  </body>
+</html>
